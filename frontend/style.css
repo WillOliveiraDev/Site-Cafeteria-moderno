@@ -1,0 +1,105 @@
+/* Formatação no Geral */
+:root{
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #010103;
+    --border: 0.1rem solid gray;
+    font-size: 15px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: 0;
+    text-decoration: none;
+    text-transform:  capitalize; /*Toda letra inicial será maiúscula */
+    transition: 0.2 linear;
+}
+
+body{
+    background-color: var(--bg);
+    color: #fff;
+}
+
+section{
+    padding: 3rem 2rem;
+    margin: 0 auto;
+}
+
+/* Formatação cabeçaalho */
+
+header section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 0.8rem;
+}
+.cabecalho{
+    position: fixed; /*Fixando no topo*/
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    border-bottom: var(--border);
+    margin: 10px 0;
+}
+
+.logo-cabecalho{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 65px;
+    height: auto;
+    padding: 10px;
+    margin-right: 150px;
+    overflow: hidden; /* deixa a imagem dentro do espaço desejado*/
+    max-width: 100%;
+    flex-shrink: 0;
+}
+
+.logo-cabecalho img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cabecalho ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.cabecalho li{
+    margin-right: 18px;
+}
+
+li a {
+    color: #fff;
+}
+
+li a:hover{
+    color: rgb(171, 156, 16);
+    border-bottom: 1px solid rgb(171, 156, 16);
+}
+
+.buscar button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    color: #fff;
+    border: none;
+    margin-left: 150px;
+}
+
+.carrinho{
+    color: #fff;
+    margin-left: 5px;
+}
