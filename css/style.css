@@ -4,7 +4,7 @@
     --black: #13131a;
     --bg: #010103;
     --border: 0.1rem solid gray;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 *{
@@ -13,8 +13,9 @@
     outline: none;
     border: 0;
     text-decoration: none;
-    text-transform:  capitalize; /*Toda letra inicial será maiúscula */
-    transition: 0.2 linear;
+    text-transform:  capitalize; /* Toda letra inicial será maiúscula */
+    transition: 0.2s linear; /* Cria uma animação suave e evita que a mudança ocorra de forma instantânea */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body{
@@ -47,14 +48,13 @@ header section{
     width: 100%;
     height: auto;
     border-bottom: var(--border);
-    margin: 10px 0;
 }
 
 .logo-cabecalho{
     display: flex;
     justify-content: start;
     align-items: center;
-    width: 65px;
+    width: 78px;
     height: auto;
     padding: 10px;
     margin-right: 150px;
@@ -85,8 +85,9 @@ li a {
 }
 
 li a:hover{
-    color: rgb(171, 156, 16);
-    border-bottom: 1px solid rgb(171, 156, 16);
+    color: rgb(210, 164, 0);
+    border-bottom: 1px solid rgb(119, 107, 4);
+    font-size: 18px;
 }
 
 .buscar button{
@@ -97,9 +98,11 @@ li a:hover{
     color: #fff;
     border: none;
     margin-left: 150px;
+    cursor: pointer;
 }
 
 .carrinho{
     color: #fff;
     margin-left: 5px;
+    cursor: pointer;
 }
